@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Is your number Odd or Even?</title>
+    </head>
+    <body>
+        <label>Enter a Number:</label>
+        <input type="number" id="grade">
+        <input type="submit" onclick="getValue()">
+        <span id="numI"></span>
+       <script>
+         function getValue()
+         {
+             let grade = document.getElementById("grade"); 
+             let numValue = num.value;
+             
+             let numI = document.getElementById("numI");
+             numI.innerText = numValue;
+              if (numValue % 0) 
+                 {
+                  document.write("Number is even")
+                 } 
+                 else 
+                 {
+                  document.write("Number is odd")
+                 }
+        }
+        </script>
+    </body>
+</html>

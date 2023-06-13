@@ -1,0 +1,118 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-color: aliceblue;
+}
+.headerAB{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 20px auto;
+}
+.headerAB h1{
+    font-size: 50px;
+    color: #000;
+    margin-bottom: 25px;
+    position: relative;
+}
+.headerAB h1::after{
+    content:"";
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    display: block;
+    margin: 0 auto;
+    background-color: rgb(137, 237, 255);
+}
+.headingAB p{
+    font-size: 18px;
+    color: #000;
+    margin-bottom: 35px;
+}
+.contAB{
+    width: 90%;
+    margin: 0 auto;
+    padding: 10px 20px;
+}
+.About{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.AboutImg{
+    flex: 1;
+    transform: 0.5s ;
+    overflow: hidden;
+}
+.AboutImg img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+    transition: 0.5s ease;
+}
+.AboutIMG:hover img{
+    transform: scale(1,2);
+}
+.ABcontent{
+    flex: 1;
+}
+.ABcontent h2{
+    font-size: 23px;
+    margin-bottom: 15px;
+    color: #333;
+
+}
+.ABcontent p{
+    font-size: 18px;
+    line-height: 1.5;
+    color: rgb(0, 0, 0);
+}
+.ABcontent .LMore{
+    display: inline-block;
+    padding: 10px 20px;
+    color: rgb(0, 0, 0);
+    font-size: 19px;
+    text-decoration: none;
+    border-radius: 25px;
+    margin-top: 15px;
+    transition: 0.5s ease;
+}
+.ABcontent .LMore:hover{
+    background-color: #86ddff;
+}
+@media screen and (max-width: 768px){
+    .headerAB{
+        padding: 0px 20px;
+    }
+    .headerAB h1{
+        font-size: 36px;
+    }
+    .headerAB p{
+        font-size: 17px;
+        margin-bottom: 0px;
+    }
+    .contAB{
+        padding: 0px;
+
+    }
+    .About{
+        padding: 20px;
+        flex-direction: column;
+    }
+    .ABcontent{
+        padding: 0px;
+        font-size: 16px;
+    }
+    .ABcontent .LMore{
+        font-size: 16px;
+    }
+}
+

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewpoint" content="width=device-width", inital-scale="1">
+        <title>SLSUCPE</title>
+  </head>
+  <body background="PPxel.jpg">
+    <style>
+      body {
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 100% 100%;
+      }
+      </style>
+      <u>
+  <h1 align="center"> <font color="#F5FFFA"> DATABASE SCHEMA </font></h1>
+      </u>
+ <form>
+    <h2 align="center"> <font color="#F5FFFA"> Customer </font> </h2>
+   <table border="5" align="center" bordercolor="#F5FFFA" width="5%">
+   <tr>
+    <th> <font color="#F5FFFA"> CustomerID </font> </th>
+    <th> <font color="#F5FFFA"> FirstName </font> </th>
+    <th> <font color="#F5FFFA"> LastName </font> </th>
+    <th> <font color="#F5FFFA"> DeliveryAddress </font> </th>
+    <th> <font color="#F5FFFA"> Email </font> </th>
+   </tr>
+   <tr>
+    <td><input type="text"  required></td>
+    <td><input type="text"  required></td>
+    <td><input type="text"  required></td>
+    <td><input type="text"  required></td>
+    <td><input type="text"  required></td>
+   </tr>
+  </table>
+  <br>
+    <h2 align="center"> <font color="#F5FFFA"> Order </font> </h2>
+   <table border="5" align="center" bordercolor="#F5FFFA" width="20%">
+   <tr>
+    <th> <font color="#F5FFFA"> OrderNo </font> </th>
+    <th> <font color="#F5FFFA"> PurchaseDate </font> </th>
+    <th> <font color="#F5FFFA"> OrderAmount </font> </th>
+    <th> <font color="#F5FFFA"> CustomerID </font> </th>
+   </tr>
+   <tr>
+    <td><input type="text"  required></td>
+    <td><input type="text"  required></td>
+    <td><input type="text"  required></td>
+    <td><input type="text"  required></td>
+   </tr>
+  </table>
+  <br>
+    <h2 align="center"> <font color="#F5FFFA"> Order Details </font> </h2>
+   <table border="5" align="center" bordercolor="#F5FFFA" width="20%">
+   <tr>
+    <th> <font color="#F5FFFA"> OrderDetailsID </font> </th>
+    <th> <font color="#F5FFFA"> OrderNo </font> </th>
+    <th> <font color="#F5FFFA"> ProductID </font> </th>
+   <th> <font color="#F5FFFA"> OrderQuantity </font> </th>
+   </tr>
+   <tr>
+    <td><input type="text"  required></td>
+    <td><input type="text"  required></td>
+    <td><input type="text"  required></td>
+    <td><input type="text"  required></td>
+   </tr>
+   </table>
+   <br>
+    <h2 align="center"> <font color="#F5FFFA"> Products </font> </h2>
+   <table border="5" align="center" bordercolor="#F5FFFA" width="20%">
+   <tr>
+    <th> <font color="#F5FFFA"> ProductID </font> </th>
+    <th> <font color="#F5FFFA"> ProductName </font> </th>
+    <th> <font color="#F5FFFA"> Category </font> </th>
+    <th> <font color="#F5FFFA"> Price </font> </th>
+   </tr>
+   <tr>
+    <td><input type="text"  required></td>
+    <td><input type="text"  required></td>
+    <td><input type="text"  required></td>
+    <td><input type="text"  required></td>
+   </tr>
+   </table>
+ </form>
+ </body>
+</html>
